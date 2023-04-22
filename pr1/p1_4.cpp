@@ -1,37 +1,49 @@
 #include<iostream>
-
 using namespace std;
 
-class house {
-	
-	public : 
-	
-	int area_size;
-	int num_room;
-	char color[15];
-	char location[100];
-	
+class time{
+	int h,h1,h2,m,m1,m2,s,s1,s2;
 	
 	public :
-		
-		getvalues(){
-		
-		cout<<"Enter the area in meter square : "; 	cin>>area_size ; 
-		cout<<"Enter the number of rooms : "; 	cin>>num_room ;
-		cout<<"Enter the color of house : "; 	cin>>color ;
-		cout<<"Enter the location of house : "; 	cin>>location ;
-		
+		void input(){
+			cout<<"\nEnter the hours : ";
+			cin>>h1;
+			cout<<"Enter the minutes : ";
+			cin>>m1;
+			cout<<"Enter the seconds : ";
+			cin>>s1;
+			
+			cout<<"=========================";
+			
+			cout<<"\nEnter the hours : ";
+			cin>>h2;
+			cout<<"Enter the minutes : ";
+			cin>>m2;
+			cout<<"Enter the seconds : ";
+			cin>>s2;
 		}
 		
+		void output(){
+			h=h1+h2;
+			m=m1+m2;
+			s=s1+s2;
+			
+			while(s>=60)
+			{
+				s-=60;
+				m++;
+			}
+			while(m>=60)
+			{
+				m-=60;
+				h++;
+			}
+			cout<<"\nseconds : "<<s<<"\nminutes : "<<m<<"\nhours : "<<h;
+		}
 };
-
-main()
+ main()
 {
-	house h;
-	h.getvalues();
-	
-		cout<<"\n\nThe area of the house is "<<h.area_size<<" meter square.\n";
-		cout<<"There are "<<h.num_room<<" rooms in the house\n";
-		cout<<"The color of the house is "<<h.color<<".\n";
-		cout<<"The location of the house is "<<h.location<<".\n";
+    time t;
+	t.input();
+	t.output();
 }
