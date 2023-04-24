@@ -5,7 +5,8 @@ class Bank {
     private:
     	char dummy, pick ;
     	int ID,phone ;
-    	string name,email;
+    	string name;
+	string email;
         float balance=0;
     public:
     	
