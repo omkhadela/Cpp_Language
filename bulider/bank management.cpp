@@ -113,7 +113,7 @@ int main() {
         cout << "2. Withdraw" << endl;
         cout << "3. Check Balance" << endl;
         cout << "4. Exit" << endl;
-        cout << "\n Option : ";
+        cout << "\n Enter your choice : ";
         cin >> choice;
 
         switch(choice) {
