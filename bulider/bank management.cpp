@@ -50,7 +50,7 @@ class Bank {
 				cout<<"\nSuccessfully Registered! : \n";
 				cout<<"------------------------------------------------------------"<<endl ;
 				cout<< "\n\t Name \t\t:" <<name;
-				cout<< "\n\t Amount Number\t:"<<ID;
+				cout<< "\n\t ID\t:"<<ID;
 				cout<< "\n\t Phone Number \t:"<<phone;
 				cout<< "\n\t Email \t\t:"<<email;
 				cout<<"\n------------------------------------------------------------"<<endl ;
